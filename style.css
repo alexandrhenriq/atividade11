@@ -2,5 +2,43 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Rubik", sans-serif;
 }
 
+:root {
+    --main-background: #06202b;
+    --nav-background: #8cbccf;
+    --hover-nav: #3c7186;
+}
+
+body {
+    background-color: var(--main-background);
+    color: #ecfeff;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+nav {
+    background-color: var(--nav-background);
+    width: fit-content;
+    padding: 40px;
+    border-radius: 10px;
+    
+}
+
+nav a {
+    color: aliceblue;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: var(--hover-nav);
+}
+
+nav ul {
+    list-style: none;
+}
